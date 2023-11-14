@@ -26,6 +26,8 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 const numberRead = document.querySelector('div.container');
 
 
+
+
 //? creare il for per stampare i numeri da 1 a 100
 
 for (i = 1; i <= 100; i++) {
@@ -40,19 +42,24 @@ numberRead.appendChild(createElm)
     // console.log(`Multi di 3: ${i} Fizz`);
     console.log("FizzBuzz");
     createElm.innerHTML= `FizzBuzz`;
+    createElm.className = 'red' ;
     //? calcolare i multipli di 5
   } else if (i % 5 === 0) {
     // console.log(`Multi di 5: ${i}  Buzz` );
     console.log("Buzz");
     createElm.innerHTML= `Buzz`;
+    createElm.className = 'yellow'
 
   } else if (i % 3 === 0) {                             //? calcolare i multipli di 3 e 5
     //console.log(`Multi di 3 e 5: ${i} FizzBuzz`);
     console.log("Fizz");
     createElm.innerHTML= `Fizz`;
+    createElm.className = 'green'
+
   } else {
     console.log(i);
     createElm.innerHTML= `${i}`;
+    createElm.className = 'blu'
   }                       
  
   
