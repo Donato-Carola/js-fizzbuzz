@@ -31,29 +31,25 @@ for (i = 1; i <= 100; i++) {
   //? creare un IF
   //? calcolare i multipli di 3
 
-  if (i % 3 === 0) {
+  if (i % 3 === 0 && i % 5 === 0) {
     // console.log(`Multi di 3: ${i} Fizz`);
-    console.log("Fizz");
+    console.log("FizzBuzz");
 
     //? calcolare i multipli di 5
   } else if (i % 5 === 0) {
     // console.log(`Multi di 5: ${i}  Buzz` );
     console.log("Buzz");
 
-  } else if (i % 3 === 0 && i % 5 === 0) {                             //? calcolare i multipli di 3 e 5
+  } else if (i % 3 === 0) {                             //? calcolare i multipli di 3 e 5
     //console.log(`Multi di 3 e 5: ${i} FizzBuzz`);
-    console.log("FizzBuzz");
+    console.log("Fizz");
   } else {
     console.log(i);
   }                       
  
   
-
-
-
-
-
 }
+
 
 
 
