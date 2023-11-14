@@ -19,41 +19,36 @@ Crea un container nel DOM , aggiungendo (attraverso la funzione appendChild()) u
 BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.*/
 
-
 //** inizio */
 
+//! creo la costante dove inserisco il richiamo dell'elemento creato in html attraverso la classe
 
+//const numberRead = document.getElementsByClassName(div.container);
 
 //? creare il for per stampare i numeri da 1 a 100
-for(i=1; i<=100; i++){
-    //? creare un IF 
-    //? calcolare i multipli di 3
-    if (i % 3 == 0){
-        
-         console.log(`Multi di 3: ${i} Fizz`);
-       // console.log('Fizz');
-        
-        //? calcolare i multipli di 5
-    }else if(i % 5 == 0){
+for (i = 1; i <= 100; i++) {
+  //? creare un IF
+  //? calcolare i multipli di 3
 
-        console.log(`Multi di 5: ${i}  Buzz` );
-        // console.log(' Buzz');
-         
-         //? calcolare i multipli di 3 e 5
-    }
-    
-   if (i % 3 == 0 || i % 5 == 0) {
+  if (i % 3 == 0) {
+    // console.log(`Multi di 3: ${i} Fizz`);
+    console.log("Fizz");
 
-    console.log(`Multi di 3 e 5: ${i} FizzBuzz`);
-      //console.log('FizzBuzz');
-    }
+    //? calcolare i multipli di 5
+  } else if (i % 5 == 0) {
+    // console.log(`Multi di 5: ${i}  Buzz` );
+    console.log("Buzz");
+  } 
+  
+  
+  
+  
+  else if (i % 3 == 0 && i % 5 == 0) {                             //? calcolare i multipli di 3 e 5
+    //console.log(`Multi di 3 e 5: ${i} FizzBuzz`);
+    console.log("FizzBuzz");
+  } else {
+    console.log(i);
+  }                       
+ 
+  
 }
-
-
-
-
-
-
-
-
-
